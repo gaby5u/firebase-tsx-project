@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar,
+.navbar-account {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar {
+  padding: 10px 40px;
+  background-color: rgb(48, 90, 129);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-account {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-account img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.container {
+  margin: 3rem;
+  font-size: 1.5rem;
+}
+
+.sign-in-button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: hsl(39, 100%, 45%);
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: hsl(39, 100%, 55%);
+  transition: all 0.4s;
+}
