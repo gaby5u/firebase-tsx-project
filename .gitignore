@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #google authentification keys
-config/firebase.ts
+src/config/firebase.ts
