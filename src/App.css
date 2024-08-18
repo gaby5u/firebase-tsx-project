@@ -18,7 +18,7 @@ body {
 
 .navbar {
   padding: 10px 40px;
-  background-color: rgb(48, 90, 129);
+  background-color: hsl(209, 46%, 35%);
 }
 
 .navbar-links {
@@ -64,4 +64,20 @@ body {
 .sign-in-button:hover {
   background-color: hsl(39, 100%, 55%);
   transition: all 0.4s;
+}
+
+.log-out-button {
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  background-color: hsl(209, 46%, 35%);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.log-out-button:hover {
+  border-color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 80%);
+  transition: all ease 0.3s;
 }

@@ -1,0 +1,28 @@
+form input,
+form textarea {
+  width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid hsl(209, 46%, 35%);
+  border-radius: 4px;
+}
+
+.submit-form-button {
+  width: 424px;
+  background-color: hsl(39, 100%, 45%);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-form-button:hover {
+  background-color: hsl(39, 100%, 55%);
+  transition: all ease 0.3s;
+}
+
+p {
+  font-size: 1rem;
+  margin: 15px 0;
+  font-weight: bold;
+}

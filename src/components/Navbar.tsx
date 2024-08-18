@@ -15,7 +15,11 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-links">
         <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
+        {!user ? (
+          <Link to="/login">Login</Link>
+        ) : (
+          <Link to="/createpost">Create Post</Link>
+        )}
       </div>
 
       <div className="navbar-account">
@@ -23,7 +27,9 @@ const Navbar = () => {
           <>
             <p>{user?.displayName}</p>
             <img src={user?.photoURL || ""} />
-            <button onClick={signUserOut}>Log Out</button>
+            <button onClick={signUserOut} className="log-out-button">
+              Log Out
+            </button>
           </>
         )}
       </div>
