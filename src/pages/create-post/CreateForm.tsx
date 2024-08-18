@@ -7,7 +7,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
 
-interface CretaeFormData {
+interface CretateFormData {
   title: string;
   description: string;
 }
@@ -23,14 +23,14 @@ const CreateForm = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<CretaeFormData>({
+  } = useForm<CretateFormData>({
     resolver: yupResolver(schema),
   });
 
   const postsRef = collection(db, "posts");
   const navigate = useNavigate();
 
-  const onCreatePost = async (data: CretaeFormData) => {
+  const onCreatePost = async (data: CretateFormData) => {
     await addDoc(postsRef, {
       ...data, //it contains whatever data contains
       username: user?.displayName,
