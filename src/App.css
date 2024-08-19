@@ -13,17 +13,17 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .navbar {
-  padding: 10px 40px;
+  padding: 0.6rem 2.5rem;
   background-color: hsl(209, 46%, 35%);
 }
 
 .navbar-links {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .navbar-links a {
@@ -67,11 +67,11 @@ body {
 }
 
 .log-out-button {
-  padding: 5px 15px;
+  padding: 5px 1rem;
   border: 1px solid #fff;
   background-color: hsl(209, 46%, 35%);
   color: #fff;
-  border-radius: 50px;
+  border-radius: 3rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -80,4 +80,16 @@ body {
   border-color: hsl(0, 0%, 80%);
   color: hsl(0, 0%, 80%);
   transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
